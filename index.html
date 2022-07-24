@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+         *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .animecontainer{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .balls{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #red{
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: redball 1s ease infinite;
+        }
+        #pink{
+            background-color: pink;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: pinkball 1s ease infinite;
+        }
+        #blue{
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: blueball 1s ease infinite;
+        }
+        #skyblue{
+            background-color: cornflowerblue;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: skyblueball 1s ease infinite;
+        }
+        #yellow{
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: yellowball 1s ease infinite;
+        }
+        #lightyellow{
+            background-color: gold;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: lightyellowball 1s ease infinite;
+        }
+        #black{
+            background-color: black;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: blackball 1s ease infinite;
+        }
+        #gray{
+            background-color: gray;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: grayball 1s ease infinite;
+        }
+
+        @keyframes redball{
+            0%{
+                transform: translateY(0px);
+            }
+            25%{
+                transform: translateY(-200px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes pinkball{
+            0%{
+                transform: translateY(0px);
+            }
+            30%{
+                transform: translateY(-200px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes blueball{
+            0%{
+                transform: translateY(0px);
+            }
+            35%{
+                transform: translateY(-200px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes skyblueball{
+            0%{
+                transform: translateY(0px);
+            }
+            40%{
+                transform: translateY(-200px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes yellowball{
+            0%{
+                transform: translateY(0px);
+            }
+            45%{
+                transform: translateY(-200px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes lightyellowball{
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-200px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes blackball{
+            0%{
+                transform: translateY(0px);
+            }
+            55%{
+                transform: translateY(-200px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        @keyframes grayball{
+            0%{
+                transform: translateY(0px);
+            }
+            60%{
+                transform: translateY(-200px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        p{
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            animation: h1 1s ease;
+            text-decoration: solid;
+        }
+        @keyframes h1 {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            100%{
+                opacity: 1;
+            }
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body onload="pokemon()">
+    <div class="animecontainer">
+        <div class="balls">
+            <div id="red"></div>
+            <div id="pink"></div>
+            <div id="blue"></div>
+            <div id="skyblue"></div>
+            <div id="yellow"></div>
+            <div id="lightyellow"></div>
+            <div id="black"></div>
+            <div id="gray"></div>
+        </div>
+        <p>Newspaper being printed&nbsp;.&nbsp;.&nbsp;.</p>
+    </div>
+    <div class="container">
+        <div class="banner">
+            <div class="header">
+                <h1>News101</h1>
+              
+                <h5>"All around the globe"</h5>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="./pages/science.htm">Science</a></li><li><a href="./pages/Tech.htm">Technology</a></li><li><a href="./pages/busin.htm">Business</a></li><li><a href="./pages/enter.htm">Entertainment</a></li><li id="rateus"><a href="./pages/rate.htm" target="_blank">Rate&nbsp;us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec-nav">
+            <ul>
+                <li><a href="./pages/science.htm">Science</a></li><li><a href="./pages/Tech.htm">Technology</a></li><li><a href="./pages/busin.htm">Business</a></li><li><a href="./pages/enter.htm">Entertainment</a></li><li id="rateus"><a href="./pages/rate.htm" target="_blank">Rate&nbsp;us</a></li>
+            </ul>
+        </div>
+        <hr>
+    </div>
+    <footer>
+        <h3>Stay Connected</h3>
+        <a href="https://instagram.com/astrogeekie?igshid=YmMyMTA2M2Y=" target="_blank"><img src="https://i.pinimg.com/736x/2c/da/19/2cda1925dcf4fb8f0644413f49671ffa.jpg" class="icons" alt=""></a>
+        <a href="" target="_blank"><img src="https://hotmart.s3.amazonaws.com/product_contents/9ac3f054-ceb2-4d2c-b0d6-92428b46b404/images.jpg" alt="" class="icons"></a>
+        <a href="" target="_blank"><img src="https://i.pinimg.com/originals/98/a6/f8/98a6f8e87ab68528d9864bd65e62e09e.jpg" alt="" class="icons"></a>
+    </footer>
+    <script src="./home.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate us</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+       .p-3{
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        text-decoration: underline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       }
+       .cont{
+        text-align: justify;
+        margin: auto;
+        background-color: whitesmoke;
+        width: 50%;
+        height: fit-content;
+        padding: 30px;
+        border-radius: 5%;
+       }
+    </style>
+</head>
+<body style="background-image:linear-gradient(to bottom right,rgb(67, 67, 208) , rgb(23, 21, 21) );">
+    <div class="p-3 mb-2 text-dark">
+        <h1>Share your experience!</h1>
+
+        <div class="cont">
+            <form class="row g-3">
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">User Id</span>
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping" name="name" id="inputname">
+                  </div>
+                
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Country</label>
+                    <input type="text" class="form-control" id="inputcountry" name="country">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">Gender</label>
+                    <select id="inputgen" class="form-select" name="gender">
+                      <option selected disabled>Choose...</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Age</label>
+                    <input type="text" class="form-control" id="inputage" name="age">
+                  </div>
+                  <div class="col-12">
+                    <label for="">How was your experience?</label>
+                    <select id="exp" class="form-select" name="gender">
+                      <option selected disabled value="">Choose from below</option>
+                      <option value="Great">Great</option>
+                      <option value="Good">Good</option>
+                      <option value="Average">Average</option>
+                      <option value="Not satisfied">Not satisfied</option>
+                    </select>
+                    <br>
+                  </div>
+                    <br>
+                <div class="input-group">
+                    <span class="input-group-text">Remarks</span>
+                    <textarea class="form-control" aria-label="With textarea" name="remarks" id="inputrem"></textarea>
+                  </div>
+                  <br>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+        </div>
+    </div>
+    <script src="../js/rate.js" type="module"></script>
+</body>
+</html>

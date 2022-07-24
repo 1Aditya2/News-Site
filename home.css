@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: none;
+
+    
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h5{
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(222, 222, 222);
+    font-style: italic;
+}
+#icon{
+    width: 50px;
+    height: 50px;
+    
+}
+.header{
+    margin-left: 20px;
+}
+.banner{
+    height: 12vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 100px;
+    
+}
+.sec-nav{
+    display: none;
+}
+
+.nav{
+    width: fit-content;
+    height: 12vh;
+    margin-right: 10px;
+}
+.nav ul{
+    height: 12vh;
+    width: fit-content;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li a{
+    /* height: 12vh; */
+    /* padding: 30px; */
+    /* background-color: black; */
+    margin-right: 20px;
+    text-decoration: none;
+   font-size: 27px;
+   color: white;
+   padding: 31px 10px;
+   transition: 0.5s;
+}
+.nav ul li a:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+footer{
+
+    display: none;
+    margin-top: 70px;
+    /* background-color: blue; */
+    width: 100%;
+    height: 60vh;
+    font-size: 40px;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+.icons{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#country{
+    border-radius: 20px;
+    width: fit-content;
+    height: 40px;
+    font-size: 15px;
+}
+
+.content{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+
+}
+
+.news{
+    background-color: rgb(38, 36, 36);
+    margin: 5px 5px;
+    width: 19%;
+    height: 520px;
+    border-radius: 20px;
+}
+.news .newsImage{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news img{
+    border-radius: 20px;
+    margin: 10px 0px;
+    width: 270px;
+    height: 270px;
+    color: whitesmoke;
+ }
+ .news .newsTitle{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .section{
+    color: whitesmoke;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+
+.news a{
+    margin: 10px 5px;
+    color: whitesmoke;
+    text-decoration: none;
+
+    font-size: 22px;
+    
+}
+.news a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+/* media query starts here! */
+@media screen and (max-width:1440px){
+    .news img{
+        width: 155px;
+        height: 155px;
+        margin: 0px 0px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .banner{
+        margin-bottom: 50px;
+    }
+    .news a{
+        font-size: 23px;
+    }
+    .news img{
+        width: 315px;
+        height: 300px;
+        margin: 0px 0px;
+    }
+    .content{
+        width: 100%;
+        display: inline-block;
+        height: fit-content;
+        margin-bottom: 80px;
+    }
+    .news{
+        margin: 15px 2px;
+        width: 99%;
+        height: fit-content;
+    }
+    .section{
+        font-size: 30px;
+    }
+    h1{
+       
+        margin-top: 13px;
+        font-size: 33px;
+    }
+    h5{
+        font-size: 14px;
+    }
+
+    .nav ul{
+        display: none;
+    }
+    .sec-nav{
+        
+        display: block;
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .sec-nav ul{
+       
+        height: 30vh;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec-nav ul li a{
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        padding: 5px 500px;
+        transition: 0.5s;
+    } 
+    .sec-nav ul li a:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    .header{
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
