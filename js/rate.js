@@ -66,6 +66,7 @@ btn.onclick=function(e){
     //code to send the data to firbase
     if(!expv==""){
         set(ref(db, "Data/" + namev), {
+            experience: expv,
             name: namev,
             country: countryv,
             gender: genderv,

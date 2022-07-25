@@ -94,7 +94,7 @@ h5{
 
 
 .news .newsImage{
-    border: 2px solid black;
+    border: 5px solid black;
     width: 50%;
     margin-right: 20px;
     /* margin-bottom: 20px; */
@@ -108,7 +108,7 @@ h5{
     
 }
 .news .newsImage:hover{
-    border: 2px solid blue;
+    border: 5px solid blue;
 }
 .news img{
     margin-top: 13px;
@@ -121,7 +121,7 @@ h5{
 
 .news .newsTitle{
     margin-top: 40px;
-    border: 2px solid black;
+    border: 5px solid black;
     color: grey;
     display: flex;
     flex-direction: column;
