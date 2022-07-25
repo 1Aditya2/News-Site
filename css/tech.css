@@ -169,6 +169,13 @@ footer{
     height: 40px;
     font-size: 15px;
 }
+
+#county{
+    border-radius: 20px;
+    width: fit-content;
+    height: 40px;
+    font-size: 15px;
+}
 #rating{
     font-size: 20px;
     color: white;

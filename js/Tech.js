@@ -59,9 +59,44 @@ function displayData(apidata){
 }
 
 
-var api_url="https://newsapi.org/v2/top-headlines?country=us&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
-getapi(api_url)
+var api_url;
 
+if(sessionStorage.getItem("Country")=="India"){
+    api_url="https://newsapi.org/v2/top-headlines?country=in&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+    getapi(api_url)
+}
+else if(sessionStorage.getItem("Country")=="Germany"){
+    api_url="https://newsapi.org/v2/top-headlines?country=de&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+    getapi(api_url)
+}
+else if(sessionStorage.getItem("Country")=="Russia"){
+    api_url="https://newsapi.org/v2/top-headlines?country=ru&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+    getapi(api_url)
+}
+else if(sessionStorage.getItem("Country")=="Canada"){
+    api_url="https://newsapi.org/v2/top-headlines?country=ca&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+    getapi(api_url)
+}
+else if(sessionStorage.getItem("Country")=="China"){
+    api_url="https://newsapi.org/v2/top-headlines?country=cn&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+    getapi(api_url)
+}
+else if(sessionStorage.getItem("Country")=="Australia"){
+    api_url="https://newsapi.org/v2/top-headlines?country=au&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+    getapi(api_url)
+}
+else if(sessionStorage.getItem("Country")=="France"){
+    api_url="https://newsapi.org/v2/top-headlines?country=fr&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+    getapi(api_url)
+}
+else if(sessionStorage.getItem("Country")=="United Kingdom"){
+    api_url="https://newsapi.org/v2/top-headlines?country=gb&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+    getapi(api_url)
+}
+else{
+    api_url="https://newsapi.org/v2/top-headlines?country=us&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+    getapi(api_url)
+}
 
 
 
@@ -70,6 +105,7 @@ function getNews(){
 
     if(country.value=="India"){
         api_url="https://newsapi.org/v2/top-headlines?country=in&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",country.value)
         country.value=""
         var content=document.getElementsByClassName("content")[0]
         content.remove()
@@ -77,6 +113,7 @@ function getNews(){
     }
     else if(country.value=="Canada"){
         api_url="https://newsapi.org/v2/top-headlines?country=ca&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",country.value)
         country.value=""
         var content=document.getElementsByClassName("content")[0]
         content.remove()
@@ -84,6 +121,7 @@ function getNews(){
     }
     else if(country.value=="Australia"){
         api_url="https://newsapi.org/v2/top-headlines?country=au&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",country.value)
         country.value=""
         var content=document.getElementsByClassName("content")[0]
         content.remove()
@@ -91,6 +129,7 @@ function getNews(){
     }
     else if(country.value=="Germany"){
         api_url="https://newsapi.org/v2/top-headlines?country=de&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",country.value)
         country.value=""
         var content=document.getElementsByClassName("content")[0]
         content.remove()
@@ -98,6 +137,7 @@ function getNews(){
     }
     else if(country.value=="China"){
         api_url="https://newsapi.org/v2/top-headlines?country=cn&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",country.value)
         country.value=""
         var content=document.getElementsByClassName("content")[0]
         content.remove()
@@ -105,6 +145,7 @@ function getNews(){
     }
     else if(country.value=="United Kingdom"){
         api_url="https://newsapi.org/v2/top-headlines?country=gb&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",country.value)
         country.value=""
         var content=document.getElementsByClassName("content")[0]
         content.remove()
@@ -112,6 +153,7 @@ function getNews(){
     }
     else if(country.value=="France"){
         api_url="https://newsapi.org/v2/top-headlines?country=fr&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",country.value)
         country.value=""
         var content=document.getElementsByClassName("content")[0]
         content.remove()
@@ -119,14 +161,96 @@ function getNews(){
     }
     else if(country.value=="United States Of America"){
         api_url="https://newsapi.org/v2/top-headlines?country=us&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",country.value)
         country.value=""
         var content=document.getElementsByClassName("content")[0]
         content.remove()
         getapi(api_url)
     }
     else if(country.value=="Russia"){
-        api_url="https://newsapi.org/v2/top-headlines?country=ru&category=science&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        api_url="https://newsapi.org/v2/top-headlines?country=ru&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",country.value)
         country.value=""
+        var content=document.getElementsByClassName("content")[0]
+        content.remove()
+        getapi(api_url)
+    }
+}
+
+
+
+
+function getNewss(){
+    let county=document.getElementById("county")
+    console.log(county.value)
+    if(county.value=="India"){
+        api_url="https://newsapi.org/v2/top-headlines?country=in&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",county.value)
+        county.value=""
+        var content=document.getElementsByClassName("content")[0]
+        content.remove()
+        getapi(api_url)
+    }
+    else if(county.value=="Canada"){
+        api_url="https://newsapi.org/v2/top-headlines?country=ca&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",county.value)
+        county.value=""
+        var content=document.getElementsByClassName("content")[0]
+        content.remove()
+        getapi(api_url)
+    }
+    else if(county.value=="Australia"){
+        api_url="https://newsapi.org/v2/top-headlines?country=au&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",county.value)
+        county.value=""
+        var content=document.getElementsByClassName("content")[0]
+        content.remove()
+        getapi(api_url)
+    }
+    else if(county.value=="Germany"){
+        api_url="https://newsapi.org/v2/top-headlines?country=de&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",county.value)
+        county.value=""
+        var content=document.getElementsByClassName("content")[0]
+        content.remove()
+        getapi(api_url)
+    }
+    else if(county.value=="China"){
+        api_url="https://newsapi.org/v2/top-headlines?country=cn&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",county.value)
+        county.value=""
+        var content=document.getElementsByClassName("content")[0]
+        content.remove()
+        getapi(api_url)
+    }
+    else if(county.value=="United Kingdom"){
+        api_url="https://newsapi.org/v2/top-headlines?country=gb&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",county.value)
+        county.value=""
+        var content=document.getElementsByClassName("content")[0]
+        content.remove()
+        getapi(api_url)
+    }
+    else if(county.value=="France"){
+        api_url="https://newsapi.org/v2/top-headlines?country=fr&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",county.value)
+        county.value=""
+        var content=document.getElementsByClassName("content")[0]
+        content.remove()
+        getapi(api_url)
+    }
+    else if(county.value=="United States Of America"){
+        api_url="https://newsapi.org/v2/top-headlines?country=us&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",county.value)
+        county.value=""
+        var content=document.getElementsByClassName("content")[0]
+        content.remove()
+        getapi(api_url)
+    }
+    else if(county.value=="Russia"){
+        api_url="https://newsapi.org/v2/top-headlines?country=ru&category=technology&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        sessionStorage.setItem("Country",county.value)
+        county.value=""
         var content=document.getElementsByClassName("content")[0]
         content.remove()
         getapi(api_url)

@@ -59,9 +59,11 @@ function displayData(apidata,k){
 var api_url;
 
 
+
+
 for(let i=0;i<4;i++){
     if(i==0){
-        api_url="https://newsapi.org/v2/top-headlines?country=us&category=science&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+        api_url=`https://newsapi.org/v2/top-headlines?country=us&category=science&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de`
         let content=document.createElement("div")
         content.className="content"
         let section=document.createElement("h4")
@@ -113,3 +115,4 @@ for(let i=0;i<4;i++){
         getapi(api_url,i)
     }
 }
+

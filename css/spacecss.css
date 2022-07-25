@@ -164,6 +164,12 @@ footer{
     height: 40px;
     font-size: 15px;
 }
+#county{
+    border-radius: 20px;
+    width: fit-content;
+    height: 40px;
+    font-size: 15px;
+}
 #rating{
     font-size: 20px;
     color: white;
@@ -210,8 +216,8 @@ footer{
         font-size: 20px;
     }
 
-    .nav ul{
-        display: none;
+    .nav{
+        visibility: hidden;
     }
     .sec-nav{
         display: block;
