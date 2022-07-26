@@ -59,7 +59,7 @@ function displayData(apidata){
 
    }
 }
-var api_url="https://newsapi.org/v2/top-headlines?country=in&category=science&sortBy=popularity&apiKey=c595aa2808d44f65896efdc7b29781de"
+var api_url="https://github.com/1Aditya2/News-Site/blob/main/JSON/scinecejson.json"
 getapi(api_url)
 
 // if(sessionStorage.getItem("Country")=="India"){
