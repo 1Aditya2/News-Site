@@ -11,7 +11,7 @@ function loader(){
 
 var container=document.getElementsByClassName("container")[0]
 function getapi(url,i){
-    fetch(url).then((res)=>{return res.json()}).then((data)=>displayData(data,i)).catch((error)=>console.log(error))
+    fetch(url).then((res)=>{return res.json()}).then((data)=>console.log(data)).catch((error)=>console.log(error))
 
 }
 
